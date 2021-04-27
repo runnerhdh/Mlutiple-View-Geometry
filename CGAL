@@ -5,3 +5,7 @@
   ·CGAL::Exact_predicates_exact_constructions_kernel--精确谓词，精确构造的内核，通俗的说可以精确的生成几何对象，可以提供精确的计算，换句话说，就是精度最高。
   ·CGAL::Exact_predicates_inexact_constructions_kernel--精确谓词，不精确的构造内核，简单讲就是生成的几何对象存在舍入误差，在处理的时候精度有所降低，速度加快。
 2.Traits
+3.Point_set_3
+  使用insert插入带有法向量信息的数据时必须首先add_normal_map()
+  使用ransac.set_input(points,point_map(),normal_map())时必须调用Point_set内置的pointmap和normalmap
+  
