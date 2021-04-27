@@ -1,0 +1,7 @@
+1.Kernel 
+  Kernel包含基本的几何对象（点、线、面等）以及对这些对象的操作，这些对象被实现成基本的类，从而增强灵活性与适用性。
+  但在目前的使用过程中，最为突出的或者是唯一感到差别的就是几何对象的精度。
+  ·CGAL::Simple_cartesian<double>--最容易理解的Kernel,可以简单的理解为数据精度为double,当然也可以设置为float
+  ·CGAL::Exact_predicates_exact_constructions_kernel--精确谓词，精确构造的内核，通俗的说可以精确的生成几何对象，可以提供精确的计算，换句话说，就是精度最高。
+  ·CGAL::Exact_predicates_inexact_constructions_kernel--精确谓词，不精确的构造内核，简单讲就是生成的几何对象存在舍入误差，在处理的时候精度有所降低，速度加快。
+2.Traits
